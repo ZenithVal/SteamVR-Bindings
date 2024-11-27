@@ -2,7 +2,7 @@
 A Collection of Bindings I've created for SteamVR.
 
 ## Installation/Usage
-1. Navigate to it here on Github then click the download button on the top right.
+1. Navigate to the file here on Github & then click the download button on the top right.
 2. Place the json file inside `(Your Documents)\steamvr\input\imports` (create imports folder if needed)
 3. In SteamVR, Navigate to [VRChat's binding config.](https://wiki.vrchat.com/wiki/Community:SteamVR_Bindings#Where)
 4. Select the newly added binding from the list of `"Bindings in the documents directory"`
