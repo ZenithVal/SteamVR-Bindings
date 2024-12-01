@@ -428,6 +428,9 @@
             },
             {
                "inputs" : {
+                  "position" : {
+                     "output" : "/actions/global/in/gesture_wheel_right"
+                  },
                   "touch" : {
                      "output" : "/actions/global/in/gesture_wheel_held_right"
                   }
