@@ -396,6 +396,10 @@
                   }
                },
                "mode" : "grab",
+               "parameters" : {
+                  "value_hold_threshold" : "1.6",
+                  "value_release_threshold" : "1.3"
+               },
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -876,7 +880,7 @@
    "controller_type" : "knuckles",
    "description" : "Gesture wheel from Simple Vive on the Index touchpad. No pose emotes. No Haptics. Mirror Chords. Edited by ZenithVal.",
    "interaction_profile" : "",
-   "name" : "Zeni Viveified Index (1.04)",
+   "name" : "Zeni Viveified Index (1.05)",
    "options" : {},
    "simulated_actions" : []
 }
