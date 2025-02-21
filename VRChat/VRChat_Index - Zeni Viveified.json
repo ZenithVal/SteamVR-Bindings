@@ -378,6 +378,9 @@
                "inputs" : {
                   "double" : {
                      "output" : "/actions/global/in/menu"
+                  },
+                  "long" : {
+                     "output" : "/actions/global/in/gesture_toggle"
                   }
                },
                "mode" : "button",
@@ -531,15 +534,6 @@
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/right/input/thumbstick"
-            },
-            {
-               "inputs" : {
-                  "double" : {
-                     "output" : "/actions/global/in/mic"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
             }
          ]
       },
