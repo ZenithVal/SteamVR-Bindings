@@ -165,6 +165,112 @@
             }
          ]
       },
+      "/actions/drone" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/hold_altitude"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/take_picture"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/drone/in/right_joystick"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/flip"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/flight_mode"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/drone/in/toggle_fpv"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/drone/in/left_joystick"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/drone/in/toggle_audio_modes"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/drone/in/respawn"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            }
+         ]
+      },
       "/actions/global" : {
          "chords" : [
             {
@@ -577,94 +683,6 @@
             }
          ]
       },
-      "/actions/drone" : {
-         "sources" : [
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/hold_altitude"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/take_picture"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "position" : {
-                     "output" : "/actions/drone/in/right_joystick"
-                  }
-               },
-               "mode" : "trackpad",
-               "path" : "/user/hand/right/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/flip"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/flight_mode"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "double" : {
-                     "output" : "/actions/drone/in/toggle_fpv"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "position" : {
-                     "output" : "/actions/drone/in/left_joystick"
-                  }
-               },
-               "mode" : "trackpad",
-               "path" : "/user/hand/left/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "double" : {
-                     "output" : "/actions/drone/in/toggle_fpv"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "south" : {
-                     "output" : "/actions/drone/in/respawn"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "sub_mode" : "click"
-               },
-               "path" : "/user/hand/left/input/trackpad"
-            }
-         ]
-      },
       "/actions/menu" : {
          "chords" : [],
          "haptics" : [],
@@ -1054,9 +1072,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "vive_controller",
-   "description" : "No Haptics. No Touch Gestures in Action menu. Lighter trigger thresholds. Better Analog Setup. Menus via x2 Click. x2+Hold for Radials. x2 both for Udon Menu. Hold for Gesture Toggle. Double R Grip for Mic. R Grip + R Menu for Mirror. Edited by ZenithVal",
+   "description" : "No Haptics. No Touch Gestures in Action menu. Lighter triggers. Better Analog. Menus x2 Click. x2+Hold for Radials. Hold Menu Gesture Toggle. Grip x2 R for Mic. R Grip + R Menu Mirror. Better Drone. Edited by ZenithVal.",
    "interaction_profile" : "",
-   "name" : "Zeni Simple Vive (1.26)",
+   "name" : "Zeni Simple Vive+ (1.27)",
    "options" : {},
    "simulated_actions" : []
 }
