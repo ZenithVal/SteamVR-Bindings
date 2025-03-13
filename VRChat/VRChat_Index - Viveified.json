@@ -608,6 +608,100 @@
             }
          ]
       },
+      "/actions/drone" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/take_picture"
+                  },
+                  "position" : {
+                     "output" : "/actions/drone/in/right_joystick"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/toggle_fpv"
+                  },
+                  "position" : {
+                     "output" : "/actions/drone/in/left_joystick"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/hold_altitude"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/flight_mode"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/toggle_ui_visibility"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/y"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/toggle_audio_modes"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/flip"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/respawn"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/a"
+            }
+         ]
+      },
       "/actions/one_hand" : {
          "chords" : [],
          "haptics" : [],
@@ -855,7 +949,7 @@
    "controller_type" : "knuckles",
    "description" : "Gesture wheel from Simple Vive on the Index touchpad. No pose emotes. No Haptics. Edited by ZenithVal.",
    "interaction_profile" : "",
-   "name" : "Viveified Index (1.05)",
+   "name" : "Viveified Index (1.06)",
    "options" : {},
    "simulated_actions" : []
 }
