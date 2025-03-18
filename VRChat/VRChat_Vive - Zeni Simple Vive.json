@@ -181,18 +181,6 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/take_picture"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
                   "position" : {
                      "output" : "/actions/drone/in/right_joystick"
                   }
@@ -215,7 +203,10 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/drone/in/flight_mode"
+                     "output" : "/actions/drone/in/take_picture"
+                  },
+                  "double" : {
+                     "output" : "/actions/drone/in/toggle_audio_modes"
                   }
                },
                "mode" : "button",
@@ -248,7 +239,7 @@
             {
                "inputs" : {
                   "double" : {
-                     "output" : "/actions/drone/in/toggle_audio_modes"
+                     "output" : "/actions/drone/in/toggle_fpv"
                   }
                },
                "mode" : "button",
@@ -265,9 +256,23 @@
                },
                "mode" : "dpad",
                "parameters" : {
+                  "deadzone_pct" : "30",
+                  "overlap_pct" : "35",
                   "sub_mode" : "click"
                },
                "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/hold_altitude"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
             }
          ]
       },
