@@ -42,8 +42,7 @@
                "mode" : "button",
                "parameters" : {
                   "click_activate_threshold" : "0.7",
-                  "click_deactivate_threshold" : "0.55",
-                  "haptic_amplitude" : "0"
+                  "click_deactivate_threshold" : "0.55"
                },
                "path" : "/user/hand/left/input/trigger"
             },
@@ -60,6 +59,226 @@
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_cancel_open_left"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_cancel_open_right"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_weight_left"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_weight_right"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_cancel_left"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_cancel_right"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_left"
+                  },
+                  "touch" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_held_left"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_right"
+                  },
+                  "touch" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_held_right"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/action_menu/in/disable_gesture_wheel_move_left"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/action_menu/in/disable_gesture_wheel_move_right"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_direct_stay_left"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/action_menu/in/gesture_wheel_direct_stay_right"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            }
+         ]
+      },
+      "/actions/drone" : {
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/flip"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/self_leveling_mod"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/drone/in/left_joystick"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/toggle_fpv"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/drone/in/right_joystick"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/take_picture"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/drone/in/respawn"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
             }
          ]
       },
@@ -77,11 +296,11 @@
          ],
          "haptics" : [
             {
-               "output" : "none",
+               "output" : "/actions/global/out/haptic",
                "path" : "/user/hand/left/output/haptic"
             },
             {
-               "output" : "none",
+               "output" : "/actions/global/out/haptic",
                "path" : "/user/hand/right/output/haptic"
             }
          ],
@@ -97,11 +316,11 @@
          ],
          "skeleton" : [
             {
-               "output" : "/actions/global/in/skeletonlefthand",
+               "output" : "none",
                "path" : "/user/hand/left/input/skeleton/left"
             },
             {
-               "output" : "/actions/global/in/skeletonrighthand",
+               "output" : "none",
                "path" : "/user/hand/right/input/skeleton/right"
             }
          ],
@@ -138,8 +357,8 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "65",
-                  "overlap_pct" : "10",
+                  "deadzone_pct" : "60",
+                  "overlap_pct" : "15",
                   "sub_mode" : "click"
                },
                "path" : "/user/hand/right/input/trackpad"
@@ -151,6 +370,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -160,6 +380,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -175,6 +396,7 @@
                   }
                },
                "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/left/input/trackpad"
             },
             {
@@ -193,6 +415,18 @@
                "inputs" : {
                   "click" : {
                      "output" : "/actions/global/in/drop"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/global/in/physbone_freeze_left"
                   }
                },
                "mode" : "button",
@@ -233,7 +467,22 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "1",
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.6",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/global/in/physbone_grab_left"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.05",
+                  "click_deactivate_threshold" : "0.05",
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/left/input/trigger"
@@ -252,9 +501,9 @@
                },
                "mode" : "trackpad",
                "parameters" : {
-                  "deadzone_pct" : "40",
+                  "deadzone_pct" : "30",
                   "exponent" : "0.7",
-                  "maxzone_pct" : "45"
+                  "maxzone_pct" : "60"
                },
                "path" : "/user/hand/left/input/trackpad"
             },
@@ -262,6 +511,18 @@
                "inputs" : {
                   "click" : {
                      "output" : "/actions/global/in/drop"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/global/in/physbone_freeze_right"
                   }
                },
                "mode" : "button",
@@ -302,7 +563,22 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "1",
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.6",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/global/in/physbone_grab_right"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.05",
+                  "click_deactivate_threshold" : "0.05",
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/right/input/trigger"
@@ -320,6 +596,7 @@
                   }
                },
                "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/right/input/trackpad"
             },
             {
@@ -336,7 +613,8 @@
                },
                "mode" : "trackpad",
                "parameters" : {
-                  "deadzone_pct" : "50",
+                  "deadzone_pct" : "30",
+                  "exponent" : "0.5",
                   "maxzone_pct" : "60"
                },
                "path" : "/user/hand/right/input/trackpad"
@@ -349,7 +627,6 @@
                },
                "mode" : "scalar_constant",
                "parameters" : {
-                  "off/x" : "0",
                   "on/x" : "1"
                },
                "path" : "/user/hand/left/input/grip"
@@ -361,6 +638,7 @@
                   }
                },
                "mode" : "scalar_constant",
+               "parameters" : {},
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -370,6 +648,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -379,6 +658,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -446,8 +726,7 @@
                "mode" : "button",
                "parameters" : {
                   "click_activate_threshold" : "0.05",
-                  "click_deactivate_threshold" : "0.01",
-                  "haptic_amplitude" : "0"
+                  "click_deactivate_threshold" : "0.01"
                },
                "path" : "/user/hand/right/input/trigger"
             },
@@ -459,7 +738,8 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "haptic_amplitude" : "0"
+                  "click_activate_threshold" : "0.25",
+                  "click_deactivate_threshold" : "0.2"
                },
                "path" : "/user/hand/right/input/trigger"
             }
@@ -478,9 +758,7 @@
                   }
                },
                "mode" : "trackpad",
-               "parameters" : {
-                  "maxzone_pct" : "95"
-               },
+               "parameters" : {},
                "path" : "/user/hand/left/input/trackpad"
             },
             {
@@ -490,9 +768,7 @@
                   }
                },
                "mode" : "trackpad",
-               "parameters" : {
-                  "maxzone_pct" : "95"
-               },
+               "parameters" : {},
                "path" : "/user/hand/right/input/trackpad"
             },
             {
@@ -562,6 +838,77 @@
                   }
                },
                "mode" : "toggle_button",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/start_move_rotate"
+                  },
+                  "position" : {
+                     "output" : "/actions/one_hand/in/move_rotate"
+                  },
+                  "touch" : {
+                     "output" : "/actions/one_hand/in/no_gesture_after_move_rotate"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "30",
+                  "exponent" : "0.7",
+                  "maxzone_pct" : "95"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/interact"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.55",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/one_hand/in/trigger_axis"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "center" : {
+                     "output" : "/actions/one_hand/in/jump"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "50",
+                  "overlap_pct" : "30",
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/drop"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/left/input/grip"
             },
             {
@@ -571,6 +918,19 @@
                   }
                },
                "mode" : "toggle_button",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/drop"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -587,27 +947,23 @@
                },
                "mode" : "trackpad",
                "parameters" : {
-                  "deadzone_pct" : "75",
-                  "maxzone_pct" : "85"
+                  "deadzone_pct" : "30",
+                  "exponent" : "0.7",
+                  "maxzone_pct" : "95"
                },
-               "path" : "/user/hand/left/input/trackpad"
+               "path" : "/user/hand/right/input/trackpad"
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/one_hand/in/start_move_rotate"
-                  },
-                  "position" : {
-                     "output" : "/actions/one_hand/in/move_rotate"
-                  },
-                  "touch" : {
-                     "output" : "/actions/one_hand/in/no_gesture_after_move_rotate"
+                  "center" : {
+                     "output" : "/actions/one_hand/in/jump"
                   }
                },
-               "mode" : "trackpad",
+               "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "75",
-                  "maxzone_pct" : "85"
+                  "deadzone_pct" : "50",
+                  "overlap_pct" : "30",
+                  "sub_mode" : "click"
                },
                "path" : "/user/hand/right/input/trackpad"
             },
@@ -619,22 +975,6 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.7",
-                  "click_deactivate_threshold" : "0.55",
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/one_hand/in/interact"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "click_activate_threshold" : "0.7",
-                  "click_deactivate_threshold" : "0.55",
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/right/input/trigger"
@@ -646,45 +986,13 @@
                   }
                },
                "mode" : "trigger",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/one_hand/in/trigger_axis"
-                  }
-               },
-               "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
-                  "center" : {
-                     "output" : "/actions/one_hand/in/jump"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "sub_mode" : "click"
-               },
-               "path" : "/user/hand/left/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "center" : {
-                     "output" : "/actions/one_hand/in/jump"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "sub_mode" : "click"
-               },
-               "path" : "/user/hand/right/input/trackpad"
-            },
-            {
-               "inputs" : {
                   "click" : {
-                     "output" : "/actions/one_hand/in/drop"
+                     "output" : "/actions/one_hand/in/gesture_wheel_cancel_open_left"
                   }
                },
                "mode" : "button",
@@ -696,7 +1004,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/one_hand/in/drop"
+                     "output" : "/actions/one_hand/in/gesture_wheel_cancel_open_left"
                   }
                },
                "mode" : "button",
@@ -704,6 +1012,102 @@
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_weight_left"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_weight_right"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_cancel_left"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_cancel_right"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_left"
+                  },
+                  "touch" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_held_left"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_right"
+                  },
+                  "touch" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_held_right"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/disable_gesture_wheel_move_left"
+                  },
+                  "touch" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_direct_stay_left"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/one_hand/in/disable_gesture_wheel_move_right"
+                  },
+                  "touch" : {
+                     "output" : "/actions/one_hand/in/gesture_wheel_direct_stay_right"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/trackpad"
             }
          ]
       }
