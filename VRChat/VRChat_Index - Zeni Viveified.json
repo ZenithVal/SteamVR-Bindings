@@ -634,17 +634,36 @@
          ]
       },
       "/actions/drone" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/trigger", "held" ],
+                  [ "/user/hand/right/input/a", "single" ]
+               ],
+               "output" : "/actions/drone/in/toggle_self_leveling"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/trigger", "held" ],
+                  [ "/user/hand/right/input/a", "single" ]
+               ],
+               "output" : "/actions/drone/in/cycle_flight_preset"
+            }
+         ],
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/drone/in/toggle_fpv"
+                     "output" : "/actions/drone/in/take_picture"
                   },
                   "position" : {
                      "output" : "/actions/drone/in/right_joystick"
                   }
                },
                "mode" : "joystick",
+               "parameters" : {},
                "path" : "/user/hand/right/input/thumbstick"
             },
             {
@@ -657,40 +676,28 @@
                   }
                },
                "mode" : "joystick",
+               "parameters" : {},
                "path" : "/user/hand/left/input/thumbstick"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/drone/in/hold_altitude"
+                     "output" : "/actions/drone/in/hold_altitude_mod"
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
+               "parameters" : {},
                "path" : "/user/hand/left/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/drone/in/take_picture"
+                     "output" : "/actions/drone/in/self_leveling_mod"
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
+               "parameters" : {},
                "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/toggle_ui_visibility"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/y"
             },
             {
                "inputs" : {
@@ -699,10 +706,8 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/left/input/a"
+               "parameters" : {},
+               "path" : "/user/hand/right/input/a"
             },
             {
                "inputs" : {
@@ -711,38 +716,8 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/left/input/a"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/drone/in/toggle_self_leveling"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/left/input/b"
-            },
-            {
-               "inputs" : {
-                  "north" : {
-                     "output" : "/actions/drone/in/toggle_audio_modes"
-                  },
-                  "south" : {
-                     "output" : "/actions/drone/in/flight_mode"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "overlap_pct" : "25",
-                  "sub_mode" : "click"
-               },
-               "path" : "/user/hand/left/input/trackpad"
+               "parameters" : {},
+               "path" : "/user/hand/right/input/a"
             }
          ]
       },
@@ -991,9 +966,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "knuckles",
-   "description" : "Gesture wheel from Simple Vive on the Index touchpad. No pose emotes. No Haptics. Mirror Chords. Edited by ZenithVal.",
+   "description" : "Gesture wheel from Simple Vive on the Index touchpad. Hair triggers. No pose emotes. No Haptics. Mirror Chords. Edited by ZenithVal.",
    "interaction_profile" : "",
-   "name" : "Zeni Viveified Index (1.06)",
+   "name" : "Zeni Viveified Index (1.07)",
    "options" : {},
    "simulated_actions" : []
 }
