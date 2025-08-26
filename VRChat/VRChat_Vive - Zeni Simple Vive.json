@@ -471,8 +471,8 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.65",
-                  "click_deactivate_threshold" : "0.6",
+                  "click_activate_threshold" : "0.1",
+                  "click_deactivate_threshold" : "0.1",
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/left/input/trigger"
@@ -527,8 +527,8 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.65",
-                  "click_deactivate_threshold" : "0.6",
+                  "click_activate_threshold" : "0.1",
+                  "click_deactivate_threshold" : "0.1",
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/right/input/trigger"
@@ -1160,7 +1160,7 @@
    "controller_type" : "vive_controller",
    "description" : "No Haptics. No Touch Gestures in Action menu. Lighter triggers. Better Analog. Menus x2 Click. x2+Hold for Radials. Hold Menu Gesture Toggle. Grip x2 R for Mic. R Grip + R Menu Mirror. Better Drone. Friendly Physbone Posing. Edited by ZenithVal.",
    "interaction_profile" : "",
-   "name" : "Zeni Simple Vive+ (1.28)",
+   "name" : "Zeni Simple Vive+ (1.29)",
    "options" : {},
    "simulated_actions" : []
 }
